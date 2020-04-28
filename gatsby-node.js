@@ -1,7 +1,19 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const { profile } = require('./src/config/data');
 
-// You can delete this file if you're not using it
+exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
+  const { createNode } = actions;
+
+  const node = {
+    id: createNodeId(`profile-info`),
+    name: profile.name,
+    job: profile.job,
+    email: profile.email,
+    links: profile.links,
+    internal: {
+      type: `Profile`,
+      contentDigest: createContentDigest(profile),
+    },
+  };
+
+  createNode(node);
+};

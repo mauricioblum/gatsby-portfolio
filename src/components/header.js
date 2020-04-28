@@ -1,42 +1,60 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react';
+import styles from './header.module.css';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = ({ profileName, profileJob, profileEmail, socialInfo }) => (
+  <header className={styles.header}>
+    <div>
+      <h1 className={styles.title}>{profileName}</h1>
+      <h2 className={styles.subtitle}>{profileJob}</h2>
+    </div>
+
+    <div>
+      <ul className={styles.socialList}>
+        <li>
+          <a
+            className={`${styles.socialLink} ${styles.socialButton}`}
+            target="_blank"
+            href={socialInfo.github}
+          >
+            <i>
+              <FaGithub size={28} />
+            </i>
+          </a>
+        </li>
+
+        <li>
+          <a
+            className={`${styles.socialLink} ${styles.socialButton}`}
+            target="_blank"
+            href={socialInfo.linkedin}
+          >
+            <i>
+              <FaLinkedin size={28} />
+            </i>
+          </a>
+        </li>
+
+        <li>
+          <a
+            className={`${styles.socialLink} ${styles.socialButton}`}
+            target="_blank"
+            href={socialInfo.twitter}
+          >
+            <i>
+              <FaTwitter size={28} />
+            </i>
+          </a>
+        </li>
+      </ul>
+      <p>
+        Email:{' '}
+        <a target="_blank" href={profileEmail}>
+          {profileEmail}
+        </a>
+      </p>
     </div>
   </header>
-)
+);
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;
