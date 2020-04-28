@@ -15,6 +15,7 @@ const Header = ({ profileName, profileJob, profileEmail, socialInfo }) => (
           <a
             className={`${styles.socialLink} ${styles.socialButton}`}
             target="_blank"
+            rel="noopener noreferrer"
             href={socialInfo.github}
           >
             <i>
@@ -27,6 +28,7 @@ const Header = ({ profileName, profileJob, profileEmail, socialInfo }) => (
           <a
             className={`${styles.socialLink} ${styles.socialButton}`}
             target="_blank"
+            rel="noopener noreferrer"
             href={socialInfo.linkedin}
           >
             <i>
@@ -39,6 +41,7 @@ const Header = ({ profileName, profileJob, profileEmail, socialInfo }) => (
           <a
             className={`${styles.socialLink} ${styles.socialButton}`}
             target="_blank"
+            rel="noopener noreferrer"
             href={socialInfo.twitter}
           >
             <i>
@@ -49,7 +52,7 @@ const Header = ({ profileName, profileJob, profileEmail, socialInfo }) => (
       </ul>
       <p>
         Email:{' '}
-        <a target="_blank" href={profileEmail}>
+        <a target="_blank" rel="noopener noreferrer" href={profileEmail}>
           {profileEmail}
         </a>
       </p>

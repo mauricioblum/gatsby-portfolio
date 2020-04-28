@@ -8,6 +8,9 @@ export const About = () => {
       profile: file(name: { eq: "profile" }) {
         publicURL
       }
+      markdownRemark {
+        html
+      }
     }
   `);
 
@@ -23,22 +26,9 @@ export const About = () => {
           />
         </div>
         <div className={styles.aboutText}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
-            iusto laborum. Nobis veritatis reiciendis qui quos, hic neque
-            suscipit praesentium dicta saepe harum cum asperiores maxime minima
-            expedita facilis fugit.
-          </p>
-          <p>lipsum</p>
-          <p>lipsum</p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quod
-            reiciendis porro voluptatibus voluptatem laboriosam, vel obcaecati
-            culpa omnis ex illum maxime libero? Neque eligendi maxime
-            accusantium ut ducimus. Nemo.
-          </p>
-          <p>lipsum</p>
-          <p>lipsum</p>
+          <div
+            dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+          ></div>
         </div>
       </div>
     </div>

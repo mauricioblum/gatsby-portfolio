@@ -26,3 +26,8 @@
   -webkit-box-shadow: inset 0 0 20px #636161;
   box-shadow: inset 0 0 20px #636161;
 }
+
+p {
+  font-size: 1.6rem;
+  text-align: justify;
+}
