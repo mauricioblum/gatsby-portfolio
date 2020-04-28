@@ -8,6 +8,7 @@ Feel free to use this project as a template for your own.
 
 Clone the repo, then run...
 
+    npm install
     npx gatsby develop
 
 And start editing!
