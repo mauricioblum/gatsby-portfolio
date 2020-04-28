@@ -1,0 +1,35 @@
+- name: Undisclosed Project in Banking company
+  #github:
+  link: itsector.pt
+  quote: >
+    React with Typescript and extensive unit-testing on frontend.
+  description: | # this will include new lines to allow paragraphs
+    Very challenging project in a really big company. Can't give any more details.
+- name: Boletão
+  #github:
+  link: boletao.com.br
+  quote: >
+    To a life with less bills.
+  description: | # this will include new lines to allow paragraphs
+    I'm leading the development of the new React Native application using Redux, Redux Saga, Styled Components and many more.
+- name: Renova Imóvel
+  #github:
+  link: renovaimovel.com.br
+  quote: >
+    Loan Service focused on home renovations.
+  description: | # this will include new lines to allow paragraphs
+    Complete React/Redux/Redux Saga/Styled Components project that I developed from the ground-up, with the help of a Spring Boot Application for the backend.
+- name: Lunch Team Platters
+  #github:
+  link: lunch.team
+  quote: >
+    It's like Ifood, but for companies.
+  description: | # this will include new lines to allow paragraphs
+    This is my first professional project working with React.js and I'm having a blast while working on it. Everyday I learn something new.
+- name: Kaze and the Wild Masks
+  #github:
+  link: playkaze.com
+  quote: >
+    I hope this project takes the Brazilian Indie Game Development scene to a new level.
+  description: | # this will include new lines to allow paragraphs
+    This project was a huge challenge for me because I was responsible for overlook the entire development cycle of the game. Managing a team was a big deal, and I learned a lot about Project Management in general while working in this project.

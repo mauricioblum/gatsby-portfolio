@@ -1,0 +1,14 @@
+- name: IFRS Campus Canoas, Canoas, Brazil
+  dates: 2014 - 2019
+  qualification: Associate Degree in System Analysis and Development
+  quote: >
+    The Federal Institute of Education, Science and Technology it's like the MIT but on a (really) small scale.
+  description: | # this will include new lines to allow paragraphs
+    The foundation my career.
+- name: The Hague University, The Netherlands
+  dates: 2014 - 2015
+  qualification: ICT & Media
+  quote: >
+    Trivia: The movie Mindhunters had a scene filmed here. Watch here -> (http://youtu.be/4ar6j12_bbY)
+  description: | # this will include new lines to allow paragraphs
+    I was given the opportunity to an 1-year study in The Netherlands as part of the government program Science Without Borders. My time at The Netherlands was a really amazing experience.

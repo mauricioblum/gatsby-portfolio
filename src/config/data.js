@@ -7,6 +7,7 @@ const profile = {
     linkedin: 'https://www.linkedin.com/in/mauricio-da-cunha-blum-31060846/',
     twitter: 'https://twitter.com/maublum',
   },
+  about: ``,
 };
 
 module.exports = {
